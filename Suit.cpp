@@ -1,11 +1,12 @@
 #include <iostream>
-
 using namespace std;
 
 int main() {
+    // deklarasi variabel
     int komputer, pemain;
     char mainLagi;
 
+    // menggunakan do-while loop untuk menjalankan permainan
     do {
         // Menghasilkan pilihan acak untuk komputer
         komputer = (time(0) % 3); // Menggunakan time sebagai seed sederhana
@@ -37,7 +38,7 @@ int main() {
         }
 
         // Menanyakan apakah pemain ingin bermain lagi atau tidak
-        cout << "Apakah Anda ingin bermain lagi? (y/n): ";
+        cout << "Apakah Anda ingin bermain lagi? (yay/nay): ";
         cin >> mainLagi;
 
     } while (mainLagi == 'y' || mainLagi == 'Y');
